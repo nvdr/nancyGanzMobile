@@ -1,33 +1,40 @@
 /***** Navigation *****/
+.nav-button-container{
+    height: 45px;
+    border-top: 1px solid #CCC;
+}
+.nav-button-container button{
+    margin-top: 12px;
+    border:none;
+    background-color: transparent;
+}
+.nav-button-container button i{
+    text-transform: uppercase;
+}
+.nav-button-container .menu-button{
+    margin-left: 15px;
+}
+.nav-button-container .mybag-button{
+    float: right;
+    margin-right: 10px;
+}
+/***** Logo *****/
 
-.navbar {
-    border-radius: 0px!important;
+.page-logo h1{
+    text-align: center;
+}
+.page-logo .trademark{
+    font-size: 12pt;
+    position: absolute;
+    top: 30px;
 }
 
-.navbar-header {
-    float: none;
+/***** Search Bar *****/
+.home-search input{
+    border-right: none;
+    border-radius: 0;
 }
-
-.navbar-toggle {
-    display: block;
+.home-search .input-group-addon{
+    background-color: transparent;
+    border-radius: 0;
 }
-
-.navbar-collapse{
-    border-top: 1px solid transparent;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    
-}
-
-.navbar-collapse.collapse {
-    display: none!important;
-}
-.navbar-nav {
-        float: none!important;
-        margin-top: 7.5px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-.collapse.in{
-        display:block !important;
-    }
