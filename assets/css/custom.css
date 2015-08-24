@@ -1,53 +1,102 @@
 /***** Navigation *****/
-.nav-button-container{
+
+.nav-button-container {
     height: 45px;
     border-top: 1px solid #CCC;
 }
-.nav-button-container button{
+
+.nav-button-container button {
     margin-top: 12px;
-    border:none;
+    border: none;
     background-color: transparent;
 }
-.nav-button-container button i{
+
+.nav-button-container button i {
     text-transform: uppercase;
 }
-.nav-button-container .menu-button{
+
+.nav-button-container .menu-button {
     margin-left: 15px;
 }
-.nav-button-container .mybag-button{
+
+.nav-button-container .mybag-button {
     float: right;
     margin-right: 10px;
 }
+
+
 /***** Logo *****/
 
-.page-logo h1{
+.page-logo h1 {
     text-align: center;
 }
-.page-logo .trademark{
+
+.page-logo .trademark {
     font-size: 12pt;
     position: absolute;
     top: 30px;
 }
 
+
 /***** Search Bar *****/
-.home-search{
+
+.home-search {
     padding: 0;
 }
-.home-search input{
+
+.home-search input {
     border-right: none;
     border-radius: 0;
 }
-.home-search .input-group-addon{
+
+.home-search .input-group-addon {
     background-color: transparent;
     border-radius: 0;
 }
 
+
 /***** By Line *****/
-.by-line{
-    background-color: #ccc;
+
+.by-line {
     height: 45px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bcbcbc+0,ffffff+25,ffffff+75,bcbcbc+100&amp;0.3+0,0.3+100 */
+    background: -moz-linear-gradient(top, rgba(188, 188, 188, 0.3) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%, rgba(188, 188, 188, 0.3) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(188, 188, 188, 0.3)), color-stop(25%, rgba(255, 255, 255, 0.3)), color-stop(75%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(188, 188, 188, 0.3)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(188, 188, 188, 0.3) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%, rgba(188, 188, 188, 0.3) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(188, 188, 188, 0.3) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%, rgba(188, 188, 188, 0.3) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(188, 188, 188, 0.3) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%, rgba(188, 188, 188, 0.3) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(188, 188, 188, 0.3) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%, rgba(188, 188, 188, 0.3) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#4dbcbcbc', endColorstr='#4dbcbcbc', GradientType=0);
+    /* IE6-9 */
 }
-.by-line p{
+
+.by-line p {
     text-align: center;
     margin-top: 12px;
+}
+
+/***** Home Banner *****/
+.home-banner{
+    position: relative;
+}
+.home-banner img{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.home-banner .banner-button{
+    position: absolute;
+    z-index: 999;
+    left: 60%;
+    bottom: 20%;
+    background: #000;
+    color: #FFF;
+    border: none;
 }
