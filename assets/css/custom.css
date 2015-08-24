@@ -30,6 +30,9 @@
 }
 
 /***** Search Bar *****/
+.home-search{
+    padding: 0;
+}
 .home-search input{
     border-right: none;
     border-radius: 0;
@@ -37,4 +40,14 @@
 .home-search .input-group-addon{
     background-color: transparent;
     border-radius: 0;
+}
+
+/***** By Line *****/
+.by-line{
+    background-color: #ccc;
+    height: 45px;
+}
+.by-line p{
+    text-align: center;
+    margin-top: 12px;
 }
