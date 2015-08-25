@@ -205,3 +205,56 @@
 .ac-sub-text {
   padding: 0 1em 0 2em;
 }
+
+.ac-nested{
+    padding-left: 20px;
+}
+/***** Social Sharing *****/
+.social-sharing h4{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.social-sharing form input{
+    width: 100%;
+    height: 35px;
+}
+
+.social-sharing ::-webkit-input-placeholder {
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.social-sharing :-moz-placeholder { /* Firefox 18- */
+   text-align: center;
+   text-transform: uppercase;  
+}
+
+.social-sharing ::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;
+   text-transform: uppercase;  
+}
+
+.social-sharing :-ms-input-placeholder {  
+   text-align: center;
+   text-transform: uppercase; 
+}
+
+.social-sharing form button{
+    height: 35px;
+    width: 100%;
+    margin-top: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #000;
+    border: 1px solid #000;
+}
+
+.social-media-buttons{
+    display: flex;
+    justify-content:space-between;
+}
+
+.social-media-buttons a{
+    color: #000;
+}
