@@ -1,16 +1,23 @@
 /***** Global Page Settings *****/
 
+@font-face {
+    font-family: avenir;
+    src: url(/assets/fonts/Avenir-Light.ttf);
+}
+
 .page-container{
     margin-left: 0;
     margin-right: 0;
     width: 100%;
 }
 
-@font-face {
-    font-family: avenir;
-    src: url(assets/fonts/Avenir-Light.ttf);
-
+body{
+  font-family: avenir;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
+
+
 
 
 /***** Navigation *****/
@@ -31,12 +38,12 @@
 }
 
 .nav-button-container .menu-button {
-    margin-left: 15px;
+    font-weight: 700;
 }
 
 .nav-button-container .mybag-button {
+    font-weight: 700;
     float: right;
-    margin-right: 10px;
 }
 
 
@@ -44,12 +51,14 @@
 
 .page-logo h1 {
     text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .page-logo .trademark {
-    font-size: 12pt;
+    font-size: 0.4em;
     position: absolute;
-    top: 30px;
+    top: 23px;
 }
 
 
@@ -64,6 +73,26 @@
     border-radius: 0;
 }
 
+.home-search ::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.home-search :-moz-placeholder { /* Firefox 18- */
+    text-transform: uppercase;
+    font-weight: 500;  
+}
+
+.home-search ::-moz-placeholder {  /* Firefox 19+ */
+    text-transform: uppercase;
+    font-weight: 500; 
+}
+
+.home-search :-ms-input-placeholder {  
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
 .home-search .input-group-addon {
     background-color: transparent;
     border-radius: 0;
@@ -71,7 +100,7 @@
 
 .home-search i{
     color: #000;
-    font-size: 14pt;
+    font-size: 1.3em;
 }
 
 
@@ -79,25 +108,27 @@
 
 .by-line {
     height: 45px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bcbcbc+0,ffffff+25,ffffff+75,bcbcbc+100&amp;0.3+0,0.3+100 */
-    background: -moz-linear-gradient(top, rgba(188, 188, 188, 0.3) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%, rgba(188, 188, 188, 0.3) 100%);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bcbcbc+0,ffffff+25,ffffff+75,bcbcbc+100&amp;0.2+0,0.2+100 */
+    background: -moz-linear-gradient(top, rgba(188, 188, 188, 0.2) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(188, 188, 188, 0.2) 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(188, 188, 188, 0.3)), color-stop(25%, rgba(255, 255, 255, 0.3)), color-stop(75%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(188, 188, 188, 0.3)));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(188, 188, 188, 0.2)), color-stop(25%, rgba(255, 255, 255, 0.2)), color-stop(75%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(188, 188, 188, 0.2)));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(188, 188, 188, 0.3) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%, rgba(188, 188, 188, 0.3) 100%);
+    background: -webkit-linear-gradient(top, rgba(188, 188, 188, 0.2) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(188, 188, 188, 0.2) 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(188, 188, 188, 0.3) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%, rgba(188, 188, 188, 0.3) 100%);
+    background: -o-linear-gradient(top, rgba(188, 188, 188, 0.2) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(188, 188, 188, 0.2) 100%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(188, 188, 188, 0.3) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%, rgba(188, 188, 188, 0.3) 100%);
+    background: -ms-linear-gradient(top, rgba(188, 188, 188, 0.2) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(188, 188, 188, 0.2) 100%);
     /* IE10+ */
-    background: linear-gradient(to bottom, rgba(188, 188, 188, 0.3) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%, rgba(188, 188, 188, 0.3) 100%);
+    background: linear-gradient(to bottom, rgba(188, 188, 188, 0.2) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(188, 188, 188, 0.2) 100%);
     /* W3C */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#4dbcbcbc', endColorstr='#4dbcbcbc', GradientType=0);
     /* IE6-9 */
 }
 
 .by-line p {
-    color: #BCBCBC;
+    color: #000;
+    letter-spacing: 0.5px;
+    font-weight: 600;
     text-align: center;
     margin-top: 12px;
     text-transform: uppercase;
@@ -106,18 +137,23 @@
 /***** Home Banner *****/
 .home-banner{
     position: relative;
+    padding: 0;
 }
 .home-banner img{
     position: relative;
     width: 100%;
     height: auto;
+    /*max-width: 640px;*/
 }
 
 .home-banner .banner-button{
+    width: 25%;
+    height: 13%;
     position: absolute;
-    z-index: 999;
-    left: 60%;
-    bottom: 20%;
+    left: 58%;
+    bottom: 17%;
+    z-index: 99;
+    font-size: 1.2em;
     background: #000;
     color: #FFF;
     border: none;
@@ -220,40 +256,55 @@
   padding: 0 30px 0 30px;
 }
 
-.social-sharing h4{
+.social-sharing .email-form p{
+    padding-top: 5px;
+    font-size: 1.1em;
+    line-height: 15px;
+    font-weight: 900;
     text-align: center;
     text-transform: uppercase;
+
 }
 
 .social-sharing form input{
     width: 100%;
-    height: 35px;
+    height: 40px;
+    border: 1px solid #000 0.9;
 }
 
 .social-sharing ::-webkit-input-placeholder {
-   text-align: center;
-   text-transform: uppercase;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
 }
 
 .social-sharing :-moz-placeholder { /* Firefox 18- */
-   text-align: center;
-   text-transform: uppercase;  
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;  
 }
 
 .social-sharing ::-moz-placeholder {  /* Firefox 19+ */
-   text-align: center;
-   text-transform: uppercase;  
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;  
 }
 
 .social-sharing :-ms-input-placeholder {  
-   text-align: center;
-   text-transform: uppercase; 
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700; 
 }
 
 .social-sharing form button{
-    height: 35px;
+    height: 40px;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 10px;
+    font-weight: 700;
     text-transform: uppercase;
     color: #fff;
     background: #000;
